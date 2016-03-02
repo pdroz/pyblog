@@ -10,11 +10,19 @@
 
     </head>
 <body>
+
     <div class="page-header">
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span> New Post</a>
-        <h1><a href="/">PyBlog</a></h1>
+        <a href="{% url 'contact' %}" class="top-menu"></span> Contact</a>
+        <a href="{% url 'contact' %}" class="top-menu"></span> Filth-Files</a>
+        <a href="{% url 'contact' %}" class="top-menu"></span> Photos</a>
+        <a href="{% url 'contact' %}" class="top-menu"></span> Videos</a>
+        
+        
+        <h1><a href="/">FILTHJUICE</a></h1>
     </div>
-    <div class="content container">
+
+    <div class="content">
         <div class="row">
             <div class="col-md-8">
             {% block content %}
@@ -22,5 +30,11 @@
             </div>
         </div>
     </div>
+
 </body>
+<div class="html">
+    <div class="page-footer">
+        <p> Copyright FILTHJUICE 2016 </p>
+    </div>
+</div>
 </html>
